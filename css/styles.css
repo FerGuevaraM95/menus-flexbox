@@ -1,0 +1,36 @@
+body {
+    box-sizing: border-box;
+    margin:0;
+    background: #56ab2f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #C0DC89, #585858);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #C0DC89, #585858); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.container {
+    max-width: 1000px;
+    min-height: calc( 100vh - 20px );
+    margin: 0 auto;
+    padding: 20px 30px 0 30px;
+    background-color: #fff;
+}
+
+nav {
+    background-color: #84C203;
+}
+nav ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+nav ul li {
+    padding: 20px;
+}
+nav ul li:hover {
+    background-color: #618E01;
+}
+nav ul a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #fff;
+}
