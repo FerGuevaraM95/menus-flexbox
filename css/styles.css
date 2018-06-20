@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     box-sizing: border-box;
     margin:0;
@@ -30,12 +34,12 @@ nav ul li:hover {
     background-color: #618E01;
 }
 nav ul a {
-    font-size: 1.4rem;
+    font-size: 1rem;
     text-decoration: none;
     color: #fff;
 }
 
-/** SIMPLE **/
+/** SIMPLE MENU **/
 .simple ul {
     display: flex;
     flex-direction: column;
@@ -47,11 +51,43 @@ nav ul a {
     text-align: center;
 }
 
-@media screen and (min-width:924px) {
+@media screen and (min-width:768px) {
     .simple ul {
         flex-direction: row;
     }
     .simple ul li {
         margin-bottom: 0;
     } 
+}
+
+/** ICONS MENU **/
+.icons .icon {
+    flex: 0 1 2rem;
+}
+
+.icons ul li a {
+    display: flex;
+    justify-content: center;
+}
+
+.icons .text span {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width:480px) {
+    .icons ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .icons ul li {
+        flex: 0 1 50%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .icons ul li {
+        flex: 1;
+    }
 }
