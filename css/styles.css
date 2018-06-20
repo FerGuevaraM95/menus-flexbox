@@ -5,6 +5,7 @@
 body {
     box-sizing: border-box;
     margin:0;
+    padding: 80px 0;
     background: #56ab2f;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #C0DC89, #585858);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #C0DC89, #585858); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -15,7 +16,7 @@ body {
     max-width: 1000px;
     min-height: calc( 100vh - 20px );
     margin: 0 auto;
-    padding: 20px 30px 0 30px;
+    padding: 20px 30px 180px 30px;
     background-color: #fff;
 }
 
@@ -28,7 +29,7 @@ nav ul {
     list-style:none;
 }
 nav ul li {
-    padding: 20px;
+    padding: 15px;
 }
 nav ul li:hover {
     background-color: #618E01;
@@ -120,7 +121,7 @@ nav ul a {
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #84C203;
+        background-color: #C0DC89;
     }
 
     .dropdown ul li:hover ul {
@@ -128,4 +129,41 @@ nav ul a {
         flex-direction: column;
         width: 100%;
     }
+}
+
+/** SOCIAL MENU **/
+.social ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social ul li span {
+    display: none;
+}
+
+.social ul li a::before {
+    font-family: "Font Awesome 5 Brands";
+}
+
+.social ul li a[href*='facebook.com']::before {
+    content: "\f39e"
+}
+.social ul li a[href*='twitter.com']::before {
+    content: "\f099"
+}
+.social ul li a[href*='youtube.com']::before {
+    content: "\f167"
+}
+.social ul li a[href*='instagram.com']::before {
+    content: "\f16d"
+}
+.social ul li a[href*='pinterest.com']::before {
+    content: "\f0d2"
+}
+
+/** DROPDOWN & SOCIAL MENU **/
+.navigation-social-dropdown {
+    display: flex;
+    justify-content: space-between;
+    background-color: #84C203;
 }
